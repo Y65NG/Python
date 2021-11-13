@@ -1,0 +1,23 @@
+.
+!.gitignore
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+tempCodeRunnerFile.py
+
+# Vscode:
+.vscode
+.ipynb_checkpoints
+.json
+.idea
+.settings
+bin/
+.history/
+
+# Java:
+.classpath
+.project
