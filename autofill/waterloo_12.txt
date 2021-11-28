@@ -1,0 +1,14 @@
+Chinese Literature III,12
+Citizenship,12
+English 12,12
+Mathematics III,12
+Physical Education,12
+Business Management,12
+Critical Thinking,12
+Cultural Core Curriculum,12
+Art Appreciation,12
+Academic Writing,12
+AP Psychology,AP
+Artificial Intelligence,12
+Linear Algebra,12
+Philosology,12

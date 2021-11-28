@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-#这个函数用于给定中心x,y坐标和机器人方向a，画出机器人轮廓（这个函数在L9课上不会仔细讲解）
+# 这个函数用于给定中心x,y坐标和机器人方向a，画出机器人轮廓（这个函数在L9课上不会仔细讲解）
 def draw_robot(x_pos,y_pos,angle):
     #机器人轮廓定义矩阵
     robot_init = np.array([[0.5, 0.5, -0.5, -0.5, 0.5],[0.5,-0.5,-0.5,0.5,0.5]])
@@ -20,8 +20,8 @@ def draw_robot(x_pos,y_pos,angle):
 def robotWheel(vx, vy, w):
     v0 = vx - vy - w
     v1 = vx + vy + w
-    v2 = vx - vy + w 
-    v3 = vx + vy - w 
+    v2 = vx - vy + w
+    v3 = vx + vy - w
 
 #给定速度v，角速度w，移动时间t，移动机器人。输入必须都是数字。
 def move_robot(vx,vy,w,time):
