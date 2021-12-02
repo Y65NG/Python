@@ -41,4 +41,3 @@ while start < len(types):
     start += 1
     
     for _ in range(tabs): pg.press('tab')
-    
