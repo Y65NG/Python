@@ -4,7 +4,7 @@ import time, threading
 balance = 0
 lock = threading.Lock()
 def change_it(n):
-    # 先存后取，结果应该为0:
+    # 先存后取,结果应该为0:
     global balance
     balance = balance + n
     balance = balance - n
