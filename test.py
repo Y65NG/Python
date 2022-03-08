@@ -1,17 +1,20 @@
-# import pyautogui as pg
-# import pyperclip as pl
-# from pynput.keyboard import Controller
+from pywebio.input import input, FLOAT
+from pywebio.output import put_text
 
-# keyboard = Controller()
+def bmi():
+    height = input("请输入你的身高(cm):", type=FLOAT)
+    weight = input("请输入你的体重(kg):", type=FLOAT)
 
-# keyboard.type("你好")
-# def type_unicode(word):
-#     for c in word:
-#         c = '%04x' % ord(c)
-#         pg.keyDown('optionleft')
-#         pg.typewrite(c)
-#         pg.keyUp('optionleft')
+    BMI = weight / (height / 100) ** 2
 
-# type_unicode('你好')你好
-# import tensorflow as tf
-print('testy')
+    top_status = [(14.9, '极瘦'), (18.4, '偏瘦'),
+                  (22.9, '正常'), (27.5, '过重'),
+                  (40.0, '肥胖'), (float('inf'), '非常肥胖')]
+
+    for top, status in top_status:
+        if BMI <= top:
+            put_text('你的 BMI 值: %.1f,身体状态:%s' % (BMI, status))
+            break
+
+if __name__ == '__main__':
+    bmi()
